@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Challenge</title>
+    <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <h3 class="check-out-title">Checkout</h3>
+        </div>
+        <div class="container check-out__container">
+            <div class="form">
+                <form name="myForm">
+                    <h4 class="form-title">Contact infomation</h4>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <div class="input-group">
+                            <span class="material-icons icon">
+                                email
+                                </span>
+                            <input type="email" class="form-control" id="email" placeholder="Enter your email">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+
+                        <div class="input-group">
+                            <span class="material-icons icon">
+                                phone
+                                </span>
+                            <input type="number" class="form-control" id="phone" placeholder="Enter your phone">
+                        </div>
+                    </div>
+
+                    <h4 class="form-title">Shipping address</h4>
+                    <div class="form-group">
+                        <label for="fname">Full name</label>
+                        <div class="input-group">
+                            <span class="material-icons icon">
+                                account_circle
+                                </span>
+                            <input type="text" class="form-control" id="fname" placeholder="Your name..">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <div class="input-group">
+                            <span class="material-icons icon">
+                                home
+                            </span>
+                            <input type="text" class="form-control" id="address" placeholder="Your address..">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="city">City</label>
+                        <div class="input-group">
+                            <span class="material-icons icon">
+                                business
+                            </span>
+                            <input type="text" class="form-control" id="city" placeholder="Your city..">
+                        </div>
+                    </div>
+                    <div class="postal-code">
+                        <div class="form-group">
+                            <label for="country">Country</label>
+                            <div class="input-group">
+                                <span class="material-icons icon">
+                                    public
+                                </span>
+                                <select name="" id="country">
+                                    <option value="">Your country..</option>
+                                    <option value="vie">Việt Nam</option>
+                                    <option value="us">America</option>
+                                    <option value="eng">England</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="pcode">Postal code</label>
+                            <div class="input-group">
+                                <span class="material-icons icon">
+                                    markunread_mailbox
+                                </span>
+                                <input type="text" class="form-control" id="pcode" placeholder="Your postal code">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="checkbox-group">
+                        <input type="checkbox" class="checkbox" id="check-save">
+                        <span class="save-info-text">Save this information for next time</span>
+                    </div>
+
+                    <button type="submit" class="btn-submit">Continue</button>
+                </form>
+            </div>
+
+            <div class="check-out">
+                <div class="card">
+                    <div class="card__list">
+                        <div class="card__item">
+                            <img src="./image/photo1.png" alt="" class="card__item-img">
+                            <div class="cart__item-info">
+                                <h4 class="cart__item-name">Vintage Backbag</h4>
+                                <span class="cart__item-price--sale">$54.99</span>
+                                <span class="cart__item-price">$94.99</span>
+                                <div class="amount-box">
+                                    <button class="minus-btn">-</button>
+                                    <p class="amount" data-cost="54.99">1</p>
+                                    <button class="plus-btn">+</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card__item">
+                            <img src="./image/photo2.png" alt="" class="card__item-img">
+                            <div class="cart__item-info">
+                                <h4 class="cart__item-name">Levi Shoes</h4>
+                                <span class="cart__item-price--sale">$74.99</span>
+                                <span class="cart__item-price">$124.99</span>
+                                <div class="amount-box">
+                                    <button class="minus-btn">-</button>
+                                    <p class="amount" data-cost="74.99">1</p>
+                                    <button class="plus-btn">+</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="shipping">
+                        <span class="name">Shipping</span>
+                        <span class="price" id="ship"></span>
+                    </div>
+
+                    <div class="total">
+                        <span class="name">Total</span>
+                        <span class="price" id="total"></span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <footer class="footer">
+            <p>TranNgocDong @ DevChallenges.io</p>
+        </footer>
+    </div>
+</body>
+
+<script src="./js/helper.js" type="text/javascript"></script>
+<script src="./js/script.js" type="text/javascript"></script>
+</html>

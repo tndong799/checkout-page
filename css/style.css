@@ -267,8 +267,18 @@ input:-webkit-autofill:active  {
     font-size: 1.4rem;
     font-weight: 600;
 }
-
-
+@media only screen and (max-width: 1024px){
+    .container{
+        padding-left: 3.5rem;
+        padding-right: 3.5rem;
+    }
+}
+@media only screen and (max-width: 768px){
+    .container{
+        padding-left: 1.2rem;
+        padding-right: 1.2rem;
+    }
+}
 @media only screen and (max-width: 480px){
     .check-out__container{
         flex-direction: column-reverse;
@@ -297,4 +307,8 @@ input:-webkit-autofill:active  {
     .footer{
         margin-top: 10rem;
     }
+}
+
+@media only screen and (max-width: 1024px){
+
 }
